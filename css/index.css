@@ -89,6 +89,16 @@ ul {
     margin:0 25px;
 }
 
+.skills ul {
+    width:100%;
+    display:flex;
+    justify-content:space-evenly;
+}
+
+.skills ul li{
+    font-size:50px;
+}
+
 
 .connect ul {
     display:flex;
@@ -119,7 +129,6 @@ section:hover ul {
   opacity: 1;
   pointer-events: auto;
 }
-
 
 
 
@@ -170,3 +179,10 @@ section:hover ul {
         margin: 0; 
     }
 }
+.footer {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+
