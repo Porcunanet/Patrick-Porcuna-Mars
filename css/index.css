@@ -8,7 +8,6 @@
 }
 
 :root {
-    /* Typography - Scales based on viewport */
     --font-main: "Cardo", serif;
     --h1-size: 2.5rem;
     --h2-size: 1.8rem;
@@ -34,9 +33,18 @@ body {
     color:var(--shadow-grey);
 }
 
+nav a {
+    text-decoration:none;
+    color:var(--burgundy);
+}
+
+nav a:hover {
+    color:var(--orange);
+}
+
 .header {
     display:flex;
-    justify-content:space-evenly;
+    justify-content:space-between;
     align-items:center;
     padding:20px 0;
 }
@@ -123,7 +131,7 @@ section ul {
   color:var(--burgundy);
 }
 
-/* Reveal when hovering over the section */
+
 section:hover p,
 section:hover ul {
   opacity: 1;
@@ -131,35 +139,155 @@ section:hover ul {
 }
 
 
+.leave-message {
+    padding: 40px 20px;
+    text-align: center; 
+    background-color: #f4f4f4;
+}
+
+.leave-message form {
+    max-width: 500px;
+    margin: 0 auto; 
+    text-align: left; 
+}
+
+.leave-message input, 
+.leave-message textarea {
+    width: 500px;
+    padding: 10px;
+    margin: 10px 0 20px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; 
+    font-family: inherit;
+}
+
+.leave-message button {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+
+}
+
+.leave-message button:hover {
+    background-color: #000; 
+    transform: translateY(-3px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+.leave-message button:active {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+.leave-message button:hover {
+    background-color: #555;
+}
+
+.messages {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.messages ul {
+    list-style-type: none;
+    padding: 0;
+    max-width: 600px;
+    margin: 2.5rem auto;
+    box-shadow: 15px 25px 5px rgba(0, 0, 0, 0.1);
+}
+
+.messages li {
+    background: white;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    padding: 1.5rem;
+    display: flex;
+    justify-content: space-evenly; /* Pushes remove button to the right */
+    align-items: center;
+    border-radius: 4px;
+    text-align: left;
+    transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+@keyframes bounceOnce {
+    0% { transform: translateY(0); }
+    30% { transform: translateY(-10px); }
+    50% { transform: translateY(0); }
+    70% { transform: translateY(-4px); }
+    100% { transform: translateY(0); }
+}
+
+.messages li:hover {
+    transform: translateY(-5px) scale(1.02);
+    animation: bounceOnce 0.5s ease;
+}
+
+
+.messages li a {
+    font-weight: bold;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.messages li span {
+    margin: 0 15px;
+    flex-grow: 1;
+}
+
+.messages button {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+
+footer {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+/* MEDIA QUERIES */
 
 /* --- TABLET (Max-width: 768px) --- */
 @media screen and (max-width: 768px) {
     section h2 {
-        font-size: 3.5rem; 
-        color: var(--prussian-blue); 
+        font-size: 3.5rem;
+        color: var(--prussian-blue);
     }
 
     .experience ul li img {
-        width: 150px; 
-        margin: 0 10px; 
+        width: 150px;
+        margin: 0 10px;
     }
-    
+
     .experience ul {
         display:grid;
         grid-template-columns:1fr 1fr;
     }
 
     p {
-        font-size: 2rem; 
-        line-height: 1.4; 
+        font-size: 2rem;
+        line-height: 1.4;
     }
 }
 
 /* --- MOBILE (Max-width: 480px) --- */
 @media screen and (max-width: 480px) {
     .nav {
-        flex-direction: column; 
-        padding: 10px 0; 
+        flex-direction: column;
+        padding: 10px 0;
     }
 
     .header h1 {
@@ -176,13 +304,7 @@ section:hover ul {
         grid-template-columns:1fr;
     }
     .experience ul li img {
-        margin: 0; 
+        margin: 0;
     }
 }
-.footer {
-    display:flex;
-    justify-content:center;
-    align-items:center;
-}
-
 
