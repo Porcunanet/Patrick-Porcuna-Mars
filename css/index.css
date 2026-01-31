@@ -285,7 +285,7 @@ summary:hover {
 
 .message-form-container h3,
 .messages-display h3 {
-    font-size: 2rem;
+    font-size: 3rem;
     color: var(--burgundy);
     margin-bottom: 1.5rem;
     text-align: center;
