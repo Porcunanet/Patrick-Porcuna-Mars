@@ -10,7 +10,7 @@ copyright.innerHTML = `&copy; ${name} ${thisYear}`;
 
 footer.appendChild(copyright);
 
-const skills = ["JavaScript", "HTML", "CSS", "GitHub"];
+const skills = ["JavaScript", "HTML", "CSS", "GitHub", "Azure", "CloudFlare", "Linux", "Python", "Bash", "PowerShell"];
 
 const skillsSection = document.querySelector('#skills');
 

@@ -387,8 +387,7 @@ footer {
     justify-content: center;
     align-items: center;
     padding: 2rem;
-    background-color: var(--shadow-grey);
-    color: var(--alabaster-grey);
+    color: var(--burgundy);
     text-align: center;
 }
 
