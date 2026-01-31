@@ -6,75 +6,92 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Patrick Porcuna Portfolio</title>
     <link rel="stylesheet" href="css/index.css">
-
-    <script src="index.js" defer></script>
   </head>
+
+
   <body>
     <header id="header" class="header">
         <nav>
-            <a href="#leave-message">Leave a Message</a>
+            <h1>Patrick <span class="orange_text">Porcuna</span></h1>
         </nav>
-        <h1>Patrick <span class="orange_text">Porcuna</span></h1>
         <ul>
             <li><a href="#about">About</a></li>
             <li><a href="#experience">Experience</a></li>
+            <li><a href="#skills">Skills</li>
+            <li><a href="#leave-message">Leave a Message</a></li>
             <li><a href="#connect">Connect</a></li>
         </ul>
     </header>
-    <section id="about" class="about">
-        <h2>About</h2>
-        <p><span class="orange_text">Experienced</span> professional with strong analytical skills, IT hardware & Software
-        experience, and a proven record in project management, Data entry, excellent customer
-        service, and team leadership within Both private and non-profit.</p>
-    </section>
 
-    <section id="experience" class="experience">
-        <h2>Experience</h2>
-        <ul>
-            <li> <img src="images/html5.svg" alt="html icon"/> </li>
-            <li> <img src="images/css.svg" alt="css icon"/> </li>
-            <li> <img src="images/javascript.svg" alt="js icon"/> </li>
-            <li> <img src="images/github.svg" alt="github icon"/> </li>
-        </ul>
-    </section>
+    <main class="accordion-container">
+        <details id="about" class="about" name="portfolio-accordion">
+            <summary>About</summary>
+            <div class="details-content">
+                <p><span class="orange_text">Experienced</span> professional with strong analytical skills, IT hardware & Software
+                experience, and a proven record in project management, Data entry, excellent customer
+                service, and team leadership within Both private and non-profit.</p>
+            </div>
+        </details>
+
+        <details id="experience" class="experience" name="portfolio-accordion">
+            <summary>Experience</summary>
+            <div class="details-content">
+                <ul>
+                    <li> <img src="images/html5.svg" alt="html icon"/> </li>
+                    <li> <img src="images/css.svg" alt="css icon"/> </li>
+                    <li> <img src="images/javascript.svg" alt="js icon"/> </li>
+                    <li> <img src="images/github.svg" alt="github icon"/> </li>
+                </ul>
+            </div>
+        </details>
+        
+        <details id="skills" class="skills" name="portfolio-accordion">
+            <summary>Skills</summary>
+            <div class="details-content">
+                <ul></ul>
+            </div>
+        </details>
+
+        <details id="connect" class="connect" name="portfolio-accordion">
+            <summary>Connect</summary>
+            <div class="details-content">
+                <ul>
+                    <li><a href="https://www.linkedin.com/in/porcuna/">LinkedIn</a></li>
+                    <li><a href="https://github.com/Porcunanet">GitHub</a></li>
+                </ul>
+            </div>
+        </details>
+
+        <details id="leave-message" class="leave-message">
+            <summary>Leave a Message</summary>
+            <div class="details-content">
+                <div class="message-form-container">
+                    <h3>Send a Message</h3>
+                    <form name="leave_message">
+                        <label for="usersName">Name:</label><br>
+                        <input type="text" name="usersName" id="usersName" required><br>
+
+                        <label for="usersEmail">Email:</label><br>
+                        <input type="email" name="usersEmail" id="usersEmail" required><br>
+
+                        <label for="usersMessage">Message:</label><br>
+                        <textarea name="usersMessage" id="usersMessage" required></textarea><br>
+
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+
+                <div id="messages" class="messages-display">
+                    <h3>Messages</h3>
+                    <ul></ul>
+                </div>
+            </div>
+        </details>   
+    </main>
     
-    <section id="skills" class="skills">
-        <h2>Skills</h2>
-        <ul></ul>
-    </section>
-
-    <section id="connect" class="connect">
-        <h2>Connect</h2>
-        <ul>
-            <li><a href="https://www.linkedin.com/in/porcuna/">LinkedIn</a></li>
-            <li><a href="https://github.com/Porcunanet">GitHub</a></li>
-        </ul>
-    </section>
-
-
-
-    <section id="leave-message" class="leave-message">
-        <h2>Leave a Message</h2>
-        <form name="leave_message">
-            <label for="usersName">Name:</label><br>
-            <input type="text" name="usersName" id="usersName" required><br>
-
-            <label for="usersEmail">Email:</label><br>
-            <input type="email" name="usersEmail" id="usersEmail" required><br>
-
-            <label for="usersMessage">Message:</label><br>
-            <textarea name="usersMessage" id="usersMessage" required></textarea><br>
-
-            <button type="submit">Submit</button>
-        </form>
-    </section>   
-    
-    <section id="messages" class="leave-message">
-        <h2>Messages</h2>
-        <ul></ul>
-    </section>
-    
-    <footer id="footer" class="footer"></footer>
+    <footer id="footer" class="footer">
+        <p>&copy; 2024 Patrick Porcuna. All rights reserved.</p>
+    </footer>
 
 
   <script src="js/index.js"></script>
