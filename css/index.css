@@ -279,6 +279,8 @@ summary:hover {
     max-width: 1200px;
     width: 100%;
     padding: 3rem 2rem;
+    align-content:center;
+    margin:0 auto;
 }
 
 .message-form-container h3,
