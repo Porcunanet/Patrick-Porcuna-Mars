@@ -80,7 +80,7 @@ nav a:hover {
     text-decoration:underline;
 }
 
-/* Main Accordion Container */
+/* Accordion Container */
 .accordion-container {
     display: grid;
     grid-template-columns: 1fr;
@@ -89,7 +89,7 @@ nav a:hover {
     position: relative;
 }
 
-/* Details/Summary Accordion Styles */
+/* Accordion Styles */
 details {
     border-bottom: 2px solid var(--shadow-grey);
     background-color: var(--alabaster-grey);
@@ -147,7 +147,6 @@ summary:hover {
     text-decoration:var(--underline);
 }
 
-/* Details Content */
 .details-content {
     padding: 3rem 2rem;
     width: 100%;
@@ -170,7 +169,6 @@ summary:hover {
     }
 }
 
-/* About Section */
 .about .details-content {
     display: flex;
     justify-content: center;
@@ -185,7 +183,6 @@ summary:hover {
     line-height: 1.6;
 }
 
-/* Experience Section */
 .experience .details-content {
     display: flex;
     justify-content: center;
@@ -212,7 +209,6 @@ summary:hover {
     transform: scale(1.1);
 }
 
-/* Skills Section */
 .skills .details-content {
     display: flex;
     justify-content: center;
@@ -270,7 +266,6 @@ summary:hover {
     color: var(--orange);
 }
 
-/* Leave Message Section */
 .leave-message .details-content {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -393,7 +388,7 @@ footer {
 
 /* MEDIA QUERIES */
 
-/* --- TABLET (Max-width: 768px) --- */
+/* --- (Max-width: 768px) --- */
 @media screen and (max-width: 768px) {
     summary {
         font-size: 2.5rem;
@@ -432,7 +427,7 @@ footer {
     }
 }
 
-/* --- MOBILE (Max-width: 480px) --- */
+/* ---  (Max-width: 480px) --- */
 @media screen and (max-width: 480px) {
     .header {
         flex-direction: column;
