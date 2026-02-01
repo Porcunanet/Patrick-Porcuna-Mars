@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&display=swap');
 
-/* Reset and Base Styles */
+/* CSS RESET */
 * {
     margin: 0;
     padding: 0;
@@ -89,7 +89,7 @@ nav a:hover {
     position: relative;
 }
 
-/* Accordion Styles */
+/* Accordion */
 details {
     border-bottom: 2px solid var(--shadow-grey);
     background-color: var(--alabaster-grey);
@@ -376,7 +376,6 @@ summary:hover {
     cursor: pointer;
 }
 
-/* Footer */
 footer {
     display: flex;
     justify-content: center;
