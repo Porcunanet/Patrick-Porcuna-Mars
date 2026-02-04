@@ -505,18 +505,16 @@ footer {
     .experience ul li img {
         width: 150px;
     }
-
+    
+    .skills ul {
+        grid-template-columns:1fr 1fr;
+    }
     .skills ul li {
         font-size: 2rem;
     }
     
     .projects .details-content ul{
-    list-style: none;
-    display: grid;
-    width: 100%;
-    gap: 1.5rem;
     grid-template-columns:repeat(2, 1fr);
-    text-align:center;
     }
 
     .connect ul li {
@@ -578,15 +576,11 @@ footer {
 
     .skills ul {
         flex-direction: column;
+        grid-template-columns:1fr;
     }
 
     .projects .details-content ul{
-    list-style: none;
-    display: grid;
-    width: 100%;
-    gap: 1.5rem;
     grid-template-columns:1fr;
-    text-align:center;
     }
 
 
