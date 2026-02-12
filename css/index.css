@@ -20,8 +20,12 @@
     --alabaster-grey:#E5E5E5;
     --burgundy:#7B0D1E;
      
-    /*Extra Decorations*/
     --underline:underline;
+
+    --h1-size: clamp(1.3rem, 1rem + 1.5vw, 2.5rem);
+    --summary-size: clamp(2rem, 1.5rem + 2vw, 3rem);
+    --p-about-size: clamp(1.5rem, 1rem + 4vw, 3rem);
+    --skill-size: clamp(1.5rem, 1rem + 3vw, 3rem);
 }
 
 body {
@@ -50,6 +54,10 @@ nav a:hover {
     justify-content: space-between;
     align-items: center;
     padding: 20px;
+}
+
+.header h1 {
+    font-size: var(--h1-size);
 }
 
 .orange_text {
@@ -463,39 +471,18 @@ footer {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* MEDIA QUERIES */
 
 /* --- (Max-width: 768px) --- */
 @media screen and (max-width: 768px) {
     summary {
-        font-size: 2.5rem;
         padding: 1.5rem;
     }
 
     summary::after {
-        font-size: 2.5rem;
         right: 1.5rem;
     }
 
-    .about p {
-        font-size: 1.8rem;
-    }
 
     .experience ul {
         grid-template-columns: 1fr 1fr;
@@ -509,16 +496,9 @@ footer {
     .skills ul {
         grid-template-columns:1fr 1fr;
     }
-    .skills ul li {
-        font-size: 2rem;
-    }
     
     .projects .details-content ul{
     grid-template-columns:repeat(2, 1fr);
-    }
-
-    .connect ul li {
-        font-size: 1.5rem;
     }
 
     .leave-message .details-content {
@@ -535,10 +515,6 @@ footer {
         padding: 10px;
     }
 
-    .header h1 {
-        font-size: 1.3rem;
-    }
-
     .header ul {
         flex-wrap: wrap;
         gap: 0.5rem;
@@ -549,21 +525,15 @@ footer {
     }
 
     summary {
-        font-size: 2rem;
         padding: 1rem;
     }
 
     summary::after {
-        font-size: 2rem;
         right: 1rem;
     }
 
     .details-content {
         padding: 2rem 1rem;
-    }
-
-    .about p {
-        font-size: 2rem;
     }
 
     .experience ul {
@@ -600,3 +570,31 @@ footer {
     }
 }
 
+
+
+summary {
+    cursor: pointer;
+    padding: 2rem;
+    font-size: var(--summary-size); 
+    font-weight: 700;
+}
+
+summary::after {
+    content: '+';
+    position: absolute;
+    right: 2rem;
+    font-size: var(--summary-size);
+}
+
+.about p {
+    max-width: 65ch;
+    font-size: var(--p-about-size);
+    color: var(--burgundy);
+    text-align: center;
+    line-height: 1.6;
+}
+
+.skills ul li {
+    font-size: var(--skill-size);
+    color: var(--burgundy);
+}
