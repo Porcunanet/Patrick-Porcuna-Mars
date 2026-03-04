@@ -24,8 +24,6 @@
 
 <<<<<<< HEAD
     /*Clamp Test*/
-=======
->>>>>>> 7d835bda4d16d58f473f029198a44b9b5b7ce205
     --h1-size: clamp(1.3rem, 1rem + 1.5vw, 2.5rem);
     --summary-size: clamp(2rem, 1.5rem + 2vw, 3rem);
     --p-about-size: clamp(1.5rem, 1rem + 4vw, 3rem);
@@ -608,31 +606,18 @@ summary::after {
     content: '+';
     position: absolute;
     right: 2rem;
-<<<<<<< HEAD
-    font-size: var(--summary-size); /* Keep icon same size as text */
-    /* ... keep rest of styles */
-=======
     font-size: var(--summary-size);
->>>>>>> 7d835bda4d16d58f473f029198a44b9b5b7ce205
 }
 
 .about p {
     max-width: 65ch;
-<<<<<<< HEAD
-    font-size: var(--p-about-size); /* Use fluid variable */
-=======
     font-size: var(--p-about-size);
->>>>>>> 7d835bda4d16d58f473f029198a44b9b5b7ce205
     color: var(--burgundy);
     text-align: center;
     line-height: 1.6;
 }
 
 .skills ul li {
-<<<<<<< HEAD
-    font-size: var(--skill-size); /* Use fluid variable */
-=======
     font-size: var(--skill-size);
->>>>>>> 7d835bda4d16d58f473f029198a44b9b5b7ce205
     color: var(--burgundy);
 }
