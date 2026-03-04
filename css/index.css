@@ -22,7 +22,6 @@
      
     --underline:underline;
 
-<<<<<<< HEAD
     /*Clamp Test*/
     --h1-size: clamp(1.3rem, 1rem + 1.5vw, 2.5rem);
     --summary-size: clamp(2rem, 1.5rem + 2vw, 3rem);
@@ -592,14 +591,9 @@ footer {
 summary {
     cursor: pointer;
     padding: 2rem;
-<<<<<<< HEAD
-    font-size: var(--summary-size); /* Use fluid variable */
     font-weight: 700;
-    /* ... keep rest of styles */
-=======
     font-size: var(--summary-size); 
     font-weight: 700;
->>>>>>> 7d835bda4d16d58f473f029198a44b9b5b7ce205
 }
 
 summary::after {
