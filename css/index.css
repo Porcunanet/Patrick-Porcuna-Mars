@@ -174,7 +174,7 @@ summary:hover {
     font-size:4rem;
     color:var(--prussian-blue);
     padding:1.5rem;
-    margin-bottom:3rem;
+    
 }
 
 @keyframes slideDown {
@@ -215,6 +215,13 @@ summary:hover {
     padding:2rem;
 }
 
+.experienceLocDate {
+    display:flex;
+    width:100%;
+    justify-content:space-evenly;
+    margin:-30px 0 30px 0;
+    color:var(--orange);
+}
 .experience p {
     max-width: 65ch;
     font-size: 2rem;
@@ -357,9 +364,10 @@ summary:hover {
 .connect ul {
     list-style: none;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     gap: 3rem;
+    width:100%;
 }
 
 .connect ul li {
@@ -370,10 +378,12 @@ summary:hover {
     text-decoration: none;
     color: var(--prussian-blue);
     transition: color 0.3s ease;
+    font-size:5rem;
 }
 
 .connect ul li a:hover {
     color: var(--orange);
+    text-decoration:underline;
 }
 
 .leave-message .details-content {
